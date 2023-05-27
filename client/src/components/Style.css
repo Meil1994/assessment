@@ -1,0 +1,307 @@
+/* Profile */
+
+.profileContainer{
+    width: 260px;
+    border: 2px solid black;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.profileLogo img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(71, 127, 176);
+   color:white;
+}
+.profileLogo{
+    width: 20%;
+}
+.profileInfo{
+    width: 80%;
+    margin-left: 20px;
+}
+.profileInfo p{
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.noti{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(71, 127, 176);
+    border-top: 1px solid white;
+    color: white;
+}
+
+/* Contact */
+.contactContainer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contactSender{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+/* Login*/
+.loginContainer{
+    border: 2px solid black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+}
+.loginContainer input{
+    width: 95%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.loginContainer button{
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 35%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(95, 95, 228);
+    color:white;
+}
+
+/* Edit */
+.editContainer{
+    padding: 10px;
+    margin: 3px;
+    margin-top: 10px;
+}
+.editContainer input{
+    width: 90%;
+    height: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+.editContainer button{
+    width: 25%;
+}
+
+/* contacts */
+.contact1{
+    width: 50%;
+    border: none;
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(27, 25, 25);
+    margin-left: 15px;
+}
+.contactContainer{
+    padding: 10px;
+    margin: 3px;
+    margin-top: 10px;
+    display: block;
+    height: 300px;
+    overflow: auto;
+}
+.contactContainer h2{
+    margin-left: 10px;
+}
+
+.sender{
+    display: none;
+}
+
+/*Chat*/
+.chatContainer{
+    border: 2px solid black;
+    height: 600px;
+    overflow: auto;
+}
+.userChatContainer{
+    border: 2px solid black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.userChatContainer input{
+    width: 97%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.userChatContainer button{
+    background-color: rgb(176, 176, 240);
+    width: 50%;
+    margin-left: 25%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.chatsContainer{
+   border: 2px solid black;
+    width: 260px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+.header{
+    border: 2px solid rgb(8, 54, 59);
+    margin-top: 0;
+    padding-left: 20px;
+    background-color: rgb(8, 54, 59);
+    color: white;
+}
+.chat-body{
+    overflow: auto;
+    height: 350px;
+}
+.message{
+    overflow: auto;
+    padding: 10px;
+}
+.content p {
+    margin: 0;
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+  }
+.meta{
+    display: flex;
+    margin-top: 0;
+    width: auto;
+}
+.meta p{
+    margin-top: 0;
+    width: auto;
+    margin: 0;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.chat-footer{
+    background-color: rgb(165, 191, 191);
+    height: 55px;
+    border-top: 1px solid rgb(13, 13, 13);
+    padding: 20px;
+    display: flex;
+}
+.chat-footer input{
+width: 70%;
+padding-left: 10px;
+}
+.chat-footer button{
+    width: 30%;
+}
+#you{
+    display: flex;
+    justify-content: flex-start;
+}
+#you .meta{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#other {
+    display: flex;
+    justify-content: flex-end;
+}
+#other .meta{
+    display: flex;
+    justify-content: flex-end;
+}
+.note{
+    padding: 10px;
+    height: 190px;
+    overflow: auto;
+}
+.notes{
+    display: flex;
+    align-items: center;
+}
+.notes p{
+    width: 80%;
+}
+.notes button{
+    width: 20%;
+    height: 30px;
+}
+.addNotes{
+    padding: 10px;
+    display: flex;
+}
+.addNotes input{
+    width: 80%;
+    height: 30px;
+}
+.addNotes button{
+    width: 20%;
+}
+.bottomP{
+    text-align: center;
+    margin-top: 40px;    
+}
+.contactHead{
+    text-align: center;
+}
+.userid{
+    display: none;
+}
+.contactContainer label{
+    font-size: 15px;
+}
+.userName{
+    border: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 150px;  
+}
+.userName input{
+    margin-left: 20px;
+}
+.contactButton{
+    border: none;
+    background-color: rgb(105, 105, 152);
+    color: white;
+    padding: 5px;
+}
+.alert{
+    position: absolute;
+    font-size: 17px;
+    margin-top: -37px;
+    margin-left: 10px;
+    color: red;
+    height: .1px;
+}
+
+
+
+

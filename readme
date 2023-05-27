@@ -1,0 +1,21 @@
+1. Unzip mysql.zip then import the tables to mysql workbench.
+2. Change database, user, and password of mysql pool located in the file './server/app.js'. Use your local mysql credentials.
+3. cd to server then run `npm install` then `npm run dev`
+4. cd to client then run `npm install` then `npm run dev`
+5. Run the server to 3000.
+6. '/' route is the login route.
+
+_/ FUNCTIONS _/
+
+1. Login
+2. Logout
+3. Create account
+4. Edit profile
+5. Add users to contact
+6. Delete users from contact
+7. Users list
+8. Auto notification when there are users that are not added to contact yet.
+9. Backend using mysql
+   10.Chat
+
+If you read this. Thank you for your time. I tried completing the connection of websocket to mysql, but I still need to research on it since this is my first time building a react chat. I was able to connect the basic functions to mysql though.
