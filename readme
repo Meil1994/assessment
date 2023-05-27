@@ -16,6 +16,5 @@ _/ FUNCTIONS _/
 7. Users list
 8. Auto notification when there are users that are not added to contact yet.
 9. Backend using mysql
-   10.Chat
+10.Chat
 
-If you read this. Thank you for your time. I tried completing the connection of websocket to mysql, but I still need to research on it since this is my first time building a react chat. I was able to connect the basic functions to mysql though.
