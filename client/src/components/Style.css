@@ -302,6 +302,72 @@ padding-left: 10px;
     height: .1px;
 }
 
+.newChatcontainer{
+    width: 240px;
+    border: 2px solid black;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+.messages{
+    height: 350px;
+    overflow: auto;
+    display: block;
+}
+
+  .message-wrapper {
+    display: inline-block;
+  }
+
+  .sender-message{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+  }
+  
+  .sender-message .main-message {
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .receiver-message .main-message {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .chatForm1{
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .chatForm1 input{
+    width: 70%;
+    height: 30px;
+  }
+  .chatForm1 button{
+    width: 25%;
+    height: 35px;
+  }
+  .chatHeader{
+    background-color: rgb(65, 146, 146);
+    margin-top: 0;
+    border: 2px solid rgb(65, 146, 146);
+    color:white;  
+    padding-left: 10px;
+}
+
+.alert2{
+    position: absolute;
+    font-size: 17px;
+    margin-top: -6px;
+    margin-left: 50px;
+    color: red;
+    height: .1px;
+}
+
 
 
 

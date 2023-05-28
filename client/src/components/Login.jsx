@@ -10,12 +10,12 @@ const LoginForm = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
+  
     if (!username || !password) {
       alert('Please enter username and password');
       return;
     }
-
+  
     fetch('http://localhost:3000/login', {
       method: 'POST',
       headers: {
@@ -26,11 +26,11 @@ const LoginForm = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-
+  
         if (data.message === 'Login successful') {
-          console.log('Data being passed to contact:', { username, userid });
+          console.log('Data being passed to contact:', { username, userid: data.userid });
           console.log('Received userid:', data.userid);
-          setUserId(data.userid);
+          setUserId(data.userid); // Update the userid state with the received value
           navigate('/profile', { state: { username, userid: data.userid } });
         }
       })
@@ -38,6 +38,7 @@ const LoginForm = () => {
         console.error(error);
       });
   };
+  
 
   return (
     <form className='loginContainer'>

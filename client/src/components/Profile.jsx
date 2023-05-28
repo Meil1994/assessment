@@ -102,7 +102,8 @@ const Profile = () => {
         <div>
           {showEdit && <Edit />}
           {showUsers && <User />}
-          {showContact && <Contact />}
+          {showContact && <Contact loggedInUserId={location.state.userid} loggedInUsername={location.state.username} />
+}
         </div>
       </div>
     </div>

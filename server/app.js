@@ -173,3 +173,29 @@ app.delete('/contacts/:idcontacts', (req, res) => {
   });
 });
 
+
+app.post('/chat', (req, res) => {
+  const { userid, senderid, username, message, room,  } = req.body;
+
+  const query = 'INSERT INTO new_chat (userid, senderid, username, message, room) VALUES (?, ?, ?, ?, ?)';
+  pool.execute(query, [userid, senderid, username, message, room,], (error, results) => {
+    if (error) {
+      console.error(error);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+    return res.json({ message: 'Contact Added successfully' });
+  });
+});
+
+app.get('/chats', (req, res) => {
+  const query = 'SELECT * FROM new_chat';
+  pool.query(query, (error, results) => {
+    if (error) {
+      console.error(error);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+    return res.json(results);
+  });
+});
+

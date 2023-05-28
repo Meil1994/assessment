@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Style.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   const [contacts, setContacts] = useState([]);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('http://localhost:3000/contacts')
@@ -23,7 +24,7 @@ const Contact = () => {
       const response = await fetch(`http://localhost:3000/contacts/${contactId}`, {
         method: 'DELETE',
       });
-  
+
       if (response.ok) {
         // Contact deleted successfully
         // Refresh the contacts list
@@ -38,6 +39,21 @@ const Contact = () => {
     }
   };
 
+  const handleChatClick = (contact, loggedInUserId, loggedInUsername) => {
+    console.log('Clicked contact:', contact);
+    console.log('Logged in userId:', loggedInUserId);
+    console.log('Logged in username:', loggedInUsername);
+  
+    navigate('/newchat', {
+      state: {
+        contact,
+        loggedInUserId,
+        loggedInUsername,
+      },
+    });
+  };
+  
+
   return (
     <div className="contactContainer">
       <h2>My Contacts</h2>
@@ -50,7 +66,8 @@ const Contact = () => {
             <tr>
               <th>ID</th>
               <th>Username</th>
-              <th>Delete Contact</th>
+              <th>Delete</th>
+              <th>Chat</th>
             </tr>
           </thead>
           <tbody>
@@ -64,7 +81,16 @@ const Contact = () => {
                     type="button"
                     onClick={() => handleDeleteContact(contact.idcontacts)}
                   >
-                    Delete Contact
+                    Delete
+                  </button>
+                </td>
+                <td>
+                  <button
+                    className="contactButton"
+                    type="button"
+                    onClick={() => handleChatClick(contact, location.state.loggedInUserId, location.state.loggedInUsername)}
+                  >
+                    Chat
                   </button>
                 </td>
               </tr>

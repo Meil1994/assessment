@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import ChatPage from './components/UsersChat';
 import Register from './components/Register';
+import NewChat from './components/NewChat';
 
 const Router = ({ userId }) => {
   const addMessage = (message) => {
@@ -15,6 +16,7 @@ const Router = ({ userId }) => {
       <Route path='/' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/profile' element={<Profile />} />
+      <Route path='/newchat' element={<NewChat />} />
       <Route path='/chatpage' element={<ChatPage userId={userId} />} />
     </Routes>
   );

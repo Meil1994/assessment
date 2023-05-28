@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 const User = () => {
   const [users, setUsers] = useState([]);
   const location = useLocation();
-
   const [username, setUsername] = useState('');
   const [userid, setUserId] = useState('');
   const [contactid, setContactId] = useState('');
