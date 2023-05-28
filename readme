@@ -16,10 +16,6 @@ _/ FUNCTIONS _/
 7. Users list
 8. Auto notification when there are users that are not added to contact yet.
 9. Backend using mysql
-<<<<<<< HEAD
-   10.Chat to contact
-10. Group chat using websocket
-=======
-10.Chat
+10.Chat to contact
+11. Group chat using websocket
 
->>>>>>> 3987694d6d65e978b47bb34b196ff2caa01d17b1
